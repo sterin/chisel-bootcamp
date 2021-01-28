@@ -48,4 +48,4 @@ RUN cp source/custom.js ~/.jupyter/custom/custom.js
 RUN jupyter nbconvert --to html --output=/tmp/ --execute 0_demo.ipynb
 
 EXPOSE 8888
-ENTRYPOINT jupyter notebook --no-browser --ip 0.0.0.0 --port 8888
+CMD jupyter notebook --no-browser --ip 0.0.0.0 --port 8888
